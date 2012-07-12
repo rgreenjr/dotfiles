@@ -77,9 +77,6 @@ set laststatus=2
 nnoremap / /\v
 vnoremap / /\v
 
-" make :substitute flag 'g' on by default
-set gdefault
-
 " clear search highlighting
 nnoremap <leader><space> :noh<cr>
 
