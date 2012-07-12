@@ -35,19 +35,18 @@ export MANPATH="/usr/local/mysql/man:$MANPATH"
 
 # postgres
 alias psql='/usr/local/bin/psql'
-alias pgstart='/usr/local/bin/pg_ctl -D /usr/local/var/pd_data -l /tmp/logfile start'
-alias pgstop='/usr/local/bin/pg_ctl -D /usr/local/var/pd_data -l /tmp/logfile stop'
-
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'    
+ 
 # git
 alias gs='git status -sb'
-alias gx='open /Applications/Gitbox.app'
+alias gdc='git diff --cached' # show difference between the HEAD and the index
+alias gdh='git diff HEAD' # show staged and unstaged changes (what would be committed)
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gx='open /Applications/Gitbox.app'
 
 # paths
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
