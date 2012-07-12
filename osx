@@ -27,3 +27,6 @@ defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 # tighten MacVim character kerning
 defaults write org.vim.MacVim MMCellWidthMultiplier 0.9
 
+# enable key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
+
