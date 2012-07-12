@@ -4,6 +4,7 @@ alias cdb='cd ~/bin'
 alias cdl='cd ~/Downloads'
 alias ll='ls -lhAF'
 alias sshh='ssh rgreen@whiskeyride.dynalias.com'
+alias sshbd='ssh rgreen@blackdog'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
@@ -44,6 +45,14 @@ alias gdc='git diff --cached' # show difference between the HEAD and the index
 alias gdh='git diff HEAD' # show staged and unstaged changes (what would be committed)
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gx='open /Applications/Gitbox.app'
+
+# git status | grep deleted | awk '{print \$3}' | xargs git rm # remove deleted files from git 
+# git reset --hard # revert back to last local commit
+# git checkout -- <file> # revert file
+# git reset HEAD -- <file> # unstage file
+# git add -u # stage all modified files being tracked
+# git reset --hard ORIG_HEAD # revert changes of a merge
+# git log origin..HEAD # show log entries
 
 # paths
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
