@@ -11,9 +11,10 @@ filetype plugin indent on
 " force encoding
 set encoding=utf-8
 
-" show line numbers and current position
+" display line numbers, current position, and window title
 set number
 set ruler
+set title
 
 " ignore case when searching unless uppercase used
 set ignorecase
@@ -81,8 +82,9 @@ set gdefault
 
 " clear search highlighting
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+
+" nnoremap <tab> %
+" vnoremap <tab> %
 
 " make Vim handle long lines correctly
 set wrap
@@ -98,11 +100,6 @@ if has("gui_running")
   set guioptions-=T
   set guifont=Menlo:h12
 endif
-
-
-" set the terminal's title
-set title
-
 
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
