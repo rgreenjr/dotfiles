@@ -83,6 +83,9 @@ nnoremap <leader><space> :noh<cr>
 " nnoremap <tab> %
 " vnoremap <tab> %
 
+" map completion popup to tab
+imap <Tab> <C-P>
+
 " make Vim handle long lines correctly
 set wrap
 " set textwidth=79
