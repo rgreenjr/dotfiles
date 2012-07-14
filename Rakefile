@@ -7,13 +7,17 @@ task :install do
   files = Dir['*'] - %w[Rakefile README.md osx]
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
-    if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
-      if File.identical? file, File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}")
-        puts "identical ~/.#{file.sub(/\.erb$/, '')}"
+
+    filename = ".#{file.sub(/\.erb$/, '')}"
+    filepath = File.join ENV['HOME'], filename
+
+    if File.exist?(filepath)
+      if File.identical? file, filepath
+        puts "identical ~/#{filename}"
       elsif replace_all
         replace_file(file)
       else
-        print "overwrite ~/.#{file.sub(/\.erb$/, '')}? [ynaq] "
+        print "overwrite ~/#{filename}? [ynadq] "
         case $stdin.gets.chomp
         when 'a'
           replace_all = true
@@ -22,8 +26,11 @@ task :install do
           replace_file(file)
         when 'q'
           exit
+        when 'd'
+          diff(file, filepath)
+          exit
         else
-          puts "skipping ~/.#{file.sub(/\.erb$/, '')}"
+          puts "skipping ~/#{filename}"
         end
       end
     else
@@ -50,4 +57,8 @@ def link_file(file)
     puts "linking ~/.#{file}"
     system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
   end
+end
+
+def diff(file1, file2)
+  system %Q{diff #{file1} #{file2}}
 end
