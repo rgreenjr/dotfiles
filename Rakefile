@@ -4,7 +4,7 @@ require 'erb'
 desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.md]
+  files = Dir['*'] - %w[Rakefile README.md osx]
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
