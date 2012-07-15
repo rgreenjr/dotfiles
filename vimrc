@@ -73,6 +73,9 @@ set ttyfast
 set backspace=indent,eol,start
 set laststatus=2
 
+" supress splash screen text
+set shortmess+=I
+
 " use standard regex syntax
 nnoremap / /\v
 vnoremap / /\v
