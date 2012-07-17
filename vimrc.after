@@ -3,13 +3,16 @@ set nocompatible
 
 " enable syntax highlighting and set theme
 syntax on
-color molokai
+colorscheme molokai
 
 " turn on file type detection
 filetype plugin indent on
 
 " force encoding
 set encoding=utf-8
+
+" increase history line memory
+set history=2000
 
 " display line numbers, current position, and window title
 set number
