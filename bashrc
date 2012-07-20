@@ -25,6 +25,7 @@ alias ri='ri -Tf ansi'
 # rails
 alias tlog='tail -f log/development.log'
 alias glog='cat log/development.log | grep'
+alias beg='bundle exec guard'
 
 # mysql
 alias mynd='mysql -u rgreen -p netcooler_development'
