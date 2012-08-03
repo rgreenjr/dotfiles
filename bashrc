@@ -17,7 +17,6 @@ export PS1='\u@\h \[\033[1;32m\]\w\[\033[0m\] $ '
 # projects
 alias cdf='cd ~/code/folio'
 alias cdss='cd ~/code/sideshow'
-alias mmm='/Users/rgreen/code/mp3-tools/mp3-tools.rb'
 
 # ruby
 alias irb='irb --readline -r irb/completion'
@@ -27,6 +26,7 @@ alias ri='ri -Tf ansi'
 alias tlog='tail -f log/development.log'
 alias glog='cat log/development.log | grep'
 alias beg='bundle exec guard'
+alias mm='mate !(@(cache|log|tmp))'
 
 # mysql
 alias mynd='mysql -u rgreen -p netcooler_development'
