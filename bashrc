@@ -26,7 +26,7 @@ alias ri='ri -Tf ansi'
 alias tlog='tail -f log/development.log'
 alias glog='cat log/development.log | grep'
 alias beg='bundle exec guard'
-alias tm='mate !(@(cache|log|tmp))'
+alias mm='mate !(@(cache|log|tmp))'
 
 # mysql
 alias mynd='mysql -u rgreen -p netcooler_development'
