@@ -23,6 +23,7 @@ alias irb='irb --readline -r irb/completion'
 alias ri='ri -Tf ansi'
 
 # rails
+alias ss='rails server'
 alias tlog='tail -f log/development.log'
 alias glog='cat log/development.log | grep'
 alias beg='bundle exec guard'
