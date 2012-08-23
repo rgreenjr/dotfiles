@@ -1,7 +1,7 @@
 if [ -z $SSH_TTY ]; then
-  export PS1='\u@\h \[\e[0;32m\]\w \[\e[m\]$'
+  export PS1='\u@\h \[\e[0;32m\]\w \[\e[m\]$ '
 else
-  export PS1='\u@\h \[\e[0;31m\]\w \[\e[m\]$'
+  export PS1='\u@\h \[\e[0;31m\]\w \[\e[m\]$ '
 fi
 
 # core
