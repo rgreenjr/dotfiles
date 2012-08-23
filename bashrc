@@ -1,3 +1,9 @@
+if [ -z $SSH_TTY ]; then
+  export PS1='\u@\h \[\e[0;32m\]\w \[\e[m\]$'
+else
+  export PS1='\u@\h \[\e[0;31m\]\w \[\e[m\]$'
+fi
+
 # core
 alias cdd='cd ~/Desktop'
 alias cdb='cd ~/bin'
@@ -11,8 +17,6 @@ alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
 
-# prompt
-export PS1='\u@\h \[\033[1;32m\]\w\[\033[0m\] $ '
 
 # projects
 alias cdf='cd ~/code/folio'
