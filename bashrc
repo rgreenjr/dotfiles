@@ -17,7 +17,6 @@ alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
 
-
 # projects
 alias cdf='cd ~/code/folio'
 alias cdss='cd ~/code/sideshow'
@@ -32,6 +31,8 @@ alias tlog='tail -f log/development.log'
 alias glog='cat log/development.log | grep'
 alias beg='bundle exec guard'
 alias mm='mate !(@(cache|log|tmp))'
+alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
+alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
 # mysql
 alias mynd='mysql -u rgreen -p netcooler_development'
