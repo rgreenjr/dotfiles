@@ -10,4 +10,9 @@ def y(obj)
   puts obj.to_yaml
 end
 
-puts "hello"
+class Object
+  def mate(method_name)
+    file, line = method(method_name).source_location
+    `mate '#{file}' -l #{line}`
+  end
+end
