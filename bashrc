@@ -45,24 +45,9 @@ export MANPATH="/usr/local/mysql/man:$MANPATH"
 # postgres
 alias psql='/usr/local/bin/psql'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgstop='pg_ctl stop -m smart -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'    
-alias pgstop_fast='pg_ctl stop -m fast -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'    
-alias pgstop_immediate='pg_ctl stop -m immediate -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'    
- 
-# git
-alias gs='git status -sb'
-alias gdc='git diff --cached' # show difference between the HEAD and the index
-alias gdh='git diff HEAD' # show staged and unstaged changes (what would be committed)
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gx='open /Applications/Gitbox.app'
-
-# git status | grep deleted | awk '{print \$3}' | xargs git rm # remove deleted files from git 
-# git reset --hard # revert back to last local commit
-# git checkout -- <file> # revert file
-# git reset HEAD -- <file> # unstage file
-# git add -u # stage all modified files being tracked
-# git reset --hard ORIG_HEAD # revert changes of a merge
-# git log origin..HEAD # show log entries
+alias pgstop='pg_ctl stop -m smart -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+alias pgstop_fast='pg_ctl stop -m fast -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+alias pgstop_immediate='pg_ctl stop -m immediate -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 
 # paths
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"

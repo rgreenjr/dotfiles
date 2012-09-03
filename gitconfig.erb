@@ -35,4 +35,30 @@
 [diff]
         tool = Kaleidoscope
 [alias]
+        st = status -sb
+        ci = commit
+        co = checkout
+        ff = merge --ff-only
+        dc = diff --cached
+        dh = diff HEAD
         unstage = reset HEAD
+        ll = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+        # remove deleted files from git
+        # git status | grep deleted | awk '{print \$3}' | xargs git rm
+
+        # revert back to last local commit
+        # git reset --hard # revert back to last local commit
+
+        # unstage file
+        # git reset HEAD -- <file>
+
+        # stage all modified files being tracked
+        # git add -u
+
+        # revert changes of a merge
+        # git reset --hard ORIG_HEAD
+
+        # show log entries
+        # git log origin..HEAD
+
