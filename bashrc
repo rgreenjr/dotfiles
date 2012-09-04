@@ -8,7 +8,7 @@ fi
 alias cdd='cd ~/Desktop'
 alias cdb='cd ~/bin'
 alias cdl='cd ~/Downloads'
-alias ll='ls -lhAF'
+alias ll='ls -lhAFG'
 alias sshh='ssh rgreen@whiskeyride.dynalias.com'
 alias sshbd='ssh ron.green@blackdog'
 alias sshss='ssh ron.green@sideshow.ziften.local'
@@ -16,6 +16,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
+alias his='history | grep '
 
 # projects
 alias cdf='cd ~/code/folio'
