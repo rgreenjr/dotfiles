@@ -50,6 +50,11 @@ alias pgstop='pg_ctl stop -m smart -D /usr/local/var/postgres -l /usr/local/var/
 alias pgstop_fast='pg_ctl stop -m fast -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 alias pgstop_immediate='pg_ctl stop -m immediate -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 
+# make history more useful
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
 # paths
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
