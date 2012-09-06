@@ -16,8 +16,10 @@ alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
-alias his='history | grep '
-alias psg='ps aux | grep '
+alias psg='ps aux | grep'
+alias his='history | grep'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
 
 # projects
 alias cdf='cd ~/code/folio'
