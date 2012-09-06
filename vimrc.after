@@ -3,7 +3,7 @@ set nocompatible
 
 " enable syntax highlighting and set theme
 syntax on
-colorscheme molokai
+colorscheme Tomorrow-Night
 
 " turn on file type detection
 filetype plugin indent on
