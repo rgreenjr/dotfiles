@@ -47,7 +47,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/mysql/man:$MANPATH"
 
 # postgres
-alias psql='/usr/local/bin/psql'
+alias psqlss='psql -d sideshow_development'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl stop -m smart -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 alias pgstop_fast='pg_ctl stop -m fast -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
