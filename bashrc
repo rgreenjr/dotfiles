@@ -39,14 +39,6 @@ alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 alias rks='rake spec'
 
-# mysql
-alias mynd='mysql -u rgreen -p netcooler_development'
-alias mynt='mysql -u rgreen -p netcooler_test'
-alias msstart='sudo mysqld_safe'
-alias msstop='sudo /usr/local/mysql/bin/mysqladmin shutdown'
-export PATH="/usr/local/mysql/bin:$PATH"
-export MANPATH="/usr/local/mysql/man:$MANPATH"
-
 # postgres
 alias psqlss='psql -d sideshow_development'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
