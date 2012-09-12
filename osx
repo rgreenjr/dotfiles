@@ -63,6 +63,9 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Change iTunes arrows to link to library instead of Apple store
 defaults write com.apple.iTunes invertStoreLinks -bool YES
 
+# Make Cmd+F focus the search input in iTunes
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+
 ###############################################################################
 # MacVim                                                                      #
 ###############################################################################
