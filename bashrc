@@ -38,6 +38,8 @@ alias mm='mate !(@(cache|log|tmp))'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 alias rks='rake spec'
+alias rkdbm='rake db:migrate'
+alias rkdbt='rake db:test:prepare'
 
 # postgres
 alias psqlss='psql -d sideshow_development'
