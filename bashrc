@@ -38,6 +38,7 @@ alias mm='mate !(@(cache|log|tmp))'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 alias rks='rake spec'
+alias rspec='bundle exec rspec'
 
 # mysql
 alias mynd='mysql -u rgreen -p netcooler_development'
