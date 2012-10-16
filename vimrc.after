@@ -32,7 +32,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 " clear search highlighting
-nnoremap <leader><space> :nohlsearch<cr>
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " show matching brackets for 200ms when cursor is over them
 set showmatch
