@@ -21,6 +21,10 @@ alias his='history | grep'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 
+# apple
+# Rebuild Launch Services database and eliminate duplicates in Open With submenu.
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+
 # projects
 alias cdf='cd ~/code/folio'
 alias cdss='cd ~/code/sideshow'
