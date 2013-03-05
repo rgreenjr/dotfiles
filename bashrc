@@ -23,7 +23,7 @@ alias egrep='egrep --color=auto'
 
 # apple
 # Rebuild Launch Services database and eliminate duplicates in Open With submenu.
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # projects
 alias cdf='cd ~/code/folio'
