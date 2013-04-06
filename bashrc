@@ -48,10 +48,8 @@ alias rkdbt='rake db:test:prepare'
 
 # postgres
 alias psqlss='psql -d sideshow_development'
-alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgstop='pg_ctl stop -m smart -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
-alias pgstop_fast='pg_ctl stop -m fast -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
-alias pgstop_immediate='pg_ctl stop -m immediate -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+alias pgstart='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
+alias pgstop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
 
 # make history more useful
 export HISTCONTROL=erasedups
