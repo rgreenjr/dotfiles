@@ -60,4 +60,6 @@ shopt -s histappend
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
