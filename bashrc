@@ -53,7 +53,8 @@ alias pgstop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.p
 
 # make history more useful
 export HISTCONTROL=erasedups
-export HISTSIZE=10000
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000000
 shopt -s histappend
 
 # paths
