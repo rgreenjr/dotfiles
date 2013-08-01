@@ -26,7 +26,6 @@ alias egrep='egrep --color=auto'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # projects
-alias cdf='cd ~/code/folio'
 alias cdss='cd ~/code/sideshow'
 
 # ruby
@@ -41,10 +40,7 @@ alias guard='bundle exec guard'
 alias mm='mate !(@(cache|log|tmp))'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
-alias rks='rake spec'
-alias rspec='bundle exec rspec'
-alias rkdbm='rake db:migrate'
-alias rkdbt='rake db:test:prepare'
+alias m='rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare'
 
 # postgres
 alias psqlss='psql -d sideshow_development'
