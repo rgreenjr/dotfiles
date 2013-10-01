@@ -27,6 +27,7 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 
 # projects
 alias cdss='cd ~/code/sideshow'
+alias cdv='cd ~/code/thrive'
 
 # ruby
 alias irb='irb --readline -r irb/completion'
