@@ -5,7 +5,6 @@ doc/api
 log/*.log
 tmp/**/*
 db/*.sqlite3
-bin/*
 .tags
 .gemtags
 
