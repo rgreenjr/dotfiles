@@ -48,8 +48,8 @@ alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
 # postgres
 alias psqlss='psql -d sideshow_development'
-alias pgstart='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-alias pgstop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
+alias pgstart='brew services start postgres'
+alias pgstop='brew services stop postgres'
 
 # make history more useful
 export HISTCONTROL=erasedups
