@@ -34,17 +34,17 @@ alias irb='irb --readline -r irb/completion'
 alias ri='ri -Tf ansi'
 
 # rails
+alias gg='bundle exec guard --clear'
+alias glog='cat log/development.log | grep'
+alias mate='mate !(@(cache|log|tmp))'
+alias mm='rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare'
+alias mmm='dropdb thrive_development && rake db:create && rake db:migrate && rake db:seed && rake db:test:prepare'
 alias rake='bin/rake'
 alias rails='bin/rails'
 alias ss='bin/rails server'
 alias tlog='tail -f log/development.log'
-alias glog='cat log/development.log | grep'
-alias gg='bundle exec guard --clear'
-alias mm='mate !(@(cache|log|tmp))'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
-alias m='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate && bin/rake db:test:prepare'
-alias gs='git st'
 
 # postgres
 alias psqlss='psql -d sideshow_development'
