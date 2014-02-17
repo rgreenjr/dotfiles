@@ -20,6 +20,7 @@ alias psg='ps aux | grep'
 alias his='history | grep'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
+alias hr='hr –'
 
 # apple
 # Rebuild Launch Services database and eliminate duplicates in Open With submenu.
