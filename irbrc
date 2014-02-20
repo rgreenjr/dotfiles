@@ -1,6 +1,9 @@
 #!/usr/bin/evn ruby
 require 'irb/completion'
 require 'irb/ext/save-history'
+require 'awesome_print'
+
+AwesomePrint.irb!
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:SAVE_HISTORY] = 1000
