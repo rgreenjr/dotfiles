@@ -8,7 +8,7 @@ fi
 alias cdd='cd ~/Desktop'
 alias cdb='cd ~/bin'
 alias cdl='cd ~/Downloads'
-alias ll='ls -lhAFG'
+alias ll='ls -lhAGp'
 alias sshh='ssh rgreen@whiskeyride.dynalias.com'
 alias sshbd='ssh ron.green@blackdog'
 alias sshss='ssh ron.green@sideshow.ziften.local'
