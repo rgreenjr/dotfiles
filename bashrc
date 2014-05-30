@@ -41,7 +41,7 @@ alias mate='mate !(@(cache|log|tmp))'
 alias mm='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate'
 alias mmm='dropdb thrive_development; bin/rake db:create && bin/rake db:migrate && bin/rake db:seed'
 alias ss='bin/rails server'
-alias tlog='tail -f log/development.log'
+alias tlog='less +F log/development.log'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
