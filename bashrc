@@ -11,7 +11,6 @@ alias cdl='cd ~/Downloads'
 alias ll='ls -lhAGp'
 alias sshh='ssh rgreen@whiskeyride.dynalias.com'
 alias sshbd='ssh ron.green@blackdog'
-alias sshss='ssh ron.green@sideshow.ziften.local'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
@@ -27,7 +26,6 @@ alias hr='hr –'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # projects
-alias cdss='cd ~/code/sideshow'
 alias cdv='cd ~/code/thrive'
 
 # ruby
@@ -35,7 +33,6 @@ alias irb='irb --readline -r irb/completion'
 alias ri='ri -Tf ansi'
 
 # rails
-alias gg='bundle exec guard --clear'
 alias glog='cat log/development.log | grep'
 alias mate='mate !(@(cache|log|tmp))'
 alias mm='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate'
@@ -46,7 +43,6 @@ alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
 # postgres
-alias psqlss='psql -d sideshow_development'
 alias pgstart='brew services start postgres'
 alias pgstop='brew services stop postgres'
 
