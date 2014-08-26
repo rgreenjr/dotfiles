@@ -58,6 +58,7 @@ shopt -s histappend
 # paths
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/"
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
