@@ -46,6 +46,9 @@ alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 alias pgstart='brew services start postgres'
 alias pgstop='brew services stop postgres'
 
+# thrive
+alias resque='TERM_CHILD=1 QUEUES=* bin/rake resque:work'
+
 # make history more useful
 export HISTCONTROL=erasedups
 export HISTSIZE=1000000
