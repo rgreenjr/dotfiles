@@ -15,11 +15,11 @@ alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
-alias psg='ps aux | grep'
 alias his='history | grep'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias hr='hr –'
+function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
 # apple
 # Rebuild Launch Services database and eliminate duplicates in Open With submenu.
