@@ -43,8 +43,8 @@ alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
 # postgres
-alias pgstart='brew services start postgres'
-alias pgstop='brew services stop postgres'
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # thrive
 alias resque='TERM_CHILD=1 QUEUES=* bin/rake resque:work'
