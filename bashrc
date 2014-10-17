@@ -46,6 +46,11 @@ alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
+# git
+alias ghid='ghi open --claim --label devops'
+alias ghie='ghi open --claim --label enhancement'
+alias ghir='ghi open --claim --label refactoring'
+
 # thrive
 alias resque='TERM_CHILD=1 QUEUES=* bin/rake resque:work'
 
