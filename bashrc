@@ -62,7 +62,7 @@ export HISTFILESIZE=1000000000
 shopt -s histappend
 
 # paths
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/Users/rgreen/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/"
 
