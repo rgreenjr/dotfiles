@@ -33,6 +33,7 @@ alias irb='irb --readline -r irb/completion'
 alias ri='ri -Tf ansi'
 
 # rails
+alias fs='foreman start'
 alias glog='cat log/development.log | grep'
 alias mate='mate !(@(cache|log|tmp))'
 alias mm='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate && rake db:test:prepare'
