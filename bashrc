@@ -27,6 +27,9 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 
 # projects
 alias cdv='cd ~/code/thrive'
+alias sshp='ssh production'
+alias sshs='ssh staging'
+alias ssht='ssh tunnel'
 
 # ruby
 alias irb='irb --readline -r irb/completion'
