@@ -1,0 +1,14 @@
+<snippet>
+    <content>
+<![CDATA[
+puts "*" * 100
+puts $0.inspect
+puts "*" * 100
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>puts</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.ruby</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Puts Ruby Debug Statement</description>
+</snippet>
