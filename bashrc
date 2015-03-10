@@ -8,12 +8,16 @@ fi
 alias cdb='cd ~/bin'
 alias cdd='cd ~/Desktop'
 alias cdl='cd ~/Downloads'
+alias cdp='cd $(find . -type d | pick)'
 alias du='du -hcd0'
 alias egrep='egrep --color=auto'
 alias grep='grep --color=auto'
-alias his='history | grep'
+alias hg='history | grep'
+alias hp='$(history | cut -c8- | sort -u | pick)'
 alias hr='hr –'
+alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
 alias ll='ls -lhAGp'
+
 
 function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
@@ -21,6 +25,7 @@ function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
 alias ghir='ghi open --claim --label refactoring'
+alias gitco='git checkout $(git branch | cut -c 3- | pick)'
 
 # postgres
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
