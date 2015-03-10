@@ -8,16 +8,12 @@ fi
 alias cdb='cd ~/bin'
 alias cdd='cd ~/Desktop'
 alias cdl='cd ~/Downloads'
-alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
 alias egrep='egrep --color=auto'
 alias grep='grep --color=auto'
 alias his='history | grep'
 alias hr='hr –'
 alias ll='ls -lhAGp'
-alias path='echo -e ${PATH//:/\\n}'
-alias sshbd='ssh ron.green@blackdog'
-alias sshh='ssh rgreen@whiskeyride.us.to'
 
 function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
