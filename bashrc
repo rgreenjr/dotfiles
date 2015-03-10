@@ -5,20 +5,20 @@ else
 fi
 
 # core
-alias cdd='cd ~/Desktop'
 alias cdb='cd ~/bin'
+alias cdd='cd ~/Desktop'
 alias cdl='cd ~/Downloads'
-alias ll='ls -lhAGp'
-alias sshh='ssh rgreen@whiskeyride.us.to'
-alias sshbd='ssh ron.green@blackdog'
-alias path='echo -e ${PATH//:/\\n}'
-alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias du='du -hcd0'
-alias his='history | grep'
-alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
+alias his='history | grep'
 alias hr='hr –'
+alias ll='ls -lhAGp'
+alias path='echo -e ${PATH//:/\\n}'
+alias sshbd='ssh ron.green@blackdog'
+alias sshh='ssh rgreen@whiskeyride.us.to'
+
 function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
 # apple
