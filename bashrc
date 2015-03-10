@@ -17,15 +17,14 @@ alias ll='ls -lhAGp'
 
 function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
-# apple
-# Rebuild Launch Services database and eliminate duplicates in Open With submenu.
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+# git
+alias ghid='ghi open --claim --label devops'
+alias ghie='ghi open --claim --label enhancement'
+alias ghir='ghi open --claim --label refactoring'
 
-# projects
-alias cdv='cd ~/code/thrive'
-alias sshp='ssh production'
-alias sshs='ssh staging'
-alias ssht='ssh tunnel'
+# postgres
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # ruby
 alias irb='irb --readline -r irb/completion'
@@ -34,25 +33,18 @@ alias ri='ri -Tf ansi'
 # rails
 alias fs='foreman start'
 alias glog='cat log/development.log | grep'
-alias mate='mate !(@(cache|log|tmp))'
 alias mm='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate && rake db:test:prepare'
 alias mmm='dropdb thrive_development; bin/rake db:create && bin/rake db:migrate && rake db:test:prepare && bin/rake db:seed'
 alias ss='bin/rails server'
-alias tlog='less -r +F log/development.log'
+alias tlog='tail -f log/development.log'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
-# postgres
-alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
-# git
-alias ghid='ghi open --claim --label devops'
-alias ghie='ghi open --claim --label enhancement'
-alias ghir='ghi open --claim --label refactoring'
-
 # thrive
-alias resque='TERM_CHILD=1 QUEUES=* bin/rake resque:work'
+alias cdv='cd ~/code/thrive'
+alias sshp='ssh production'
+alias sshs='ssh staging'
+alias ssht='ssh tunnel'
 
 # make history more useful
 export HISTCONTROL=erasedups
