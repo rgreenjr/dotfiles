@@ -18,7 +18,6 @@ alias hr='hr –'
 alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
 alias ll='ls -lhAGp'
 
-
 function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
 
 # git
