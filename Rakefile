@@ -1,6 +1,13 @@
 require 'rake'
 require 'erb'
 
+desc "link Sublime Text configuration files"
+task :link_sublime_text_files do
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Default (OSX).sublime-keymap' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Preferences.sublime-settings' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/puts-debug.sublime-snippet'   '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+end
+
 desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
