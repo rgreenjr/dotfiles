@@ -37,6 +37,7 @@ alias ri='ri -Tf ansi'
 # rails
 alias fs='foreman start'
 alias glog='cat log/development.log | grep'
+alias gg='bundle exec guard'
 alias mm='bin/rake db:migrate && bin/rake db:rollback && bin/rake db:migrate && rake db:test:prepare'
 alias mmm='dropdb thrive_development; bin/rake db:create && bin/rake db:migrate && rake db:test:prepare && bin/rake db:seed'
 alias ss='bin/rails server'
