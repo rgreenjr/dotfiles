@@ -5,14 +5,18 @@ alias cdl='cd ~/Downloads'
 alias cdp='cd $(find . -type d | pick)'
 alias du='du -hcd0'
 alias hg='history | grep'
-alias hp='$(history | cut -c8- | sort -u | pick)'
 alias hr='hr –'
 alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
 alias ll='ls -lhAGp'
 alias s='subl .'
 
-# networking
+# pick command from history
+alias hp='$(history | cut -c8- | sort -u | pick)'
+
+# show public IP address
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# show local IP address
 alias localip="ipconfig getifaddr en0"
 
 # flush and reset all DNS caches
