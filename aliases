@@ -11,6 +11,7 @@ alias hp='$(history | cut -c8- | sort -u | pick)'
 alias hr='hr –'
 alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
 alias ll='ls -lhAGp'
+alias s='subl .'
 
 # networking
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
