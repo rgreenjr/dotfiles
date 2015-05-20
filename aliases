@@ -17,13 +17,13 @@ alias s='subl .'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+# flush and reset all DNS caches
+alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
 
-# Ring terminal bell and put badge on terminal icon
+# ring terminal bell and put badge on terminal icon
 alias badge="tput bel"
 
-# Reload the shell (i.e. invoke as a login shell)
+# reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
 # git
