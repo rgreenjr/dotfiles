@@ -8,6 +8,7 @@ brew upgrade --all
 brew install boot2docker
 brew install brew-cask
 brew install docker
+brew install docker-compose
 brew install git
 brew install hr
 brew install redis
