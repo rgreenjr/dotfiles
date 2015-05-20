@@ -2,3 +2,8 @@
 export HISTCONTROL=erasedups
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000000
+
+# paths
+export PATH="$HOME/bin:$HOME/code/video-transcoding-scripts:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/"
+export MANPATH="/usr/local/man:$MANPATH"
