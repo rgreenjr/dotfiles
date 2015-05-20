@@ -1,10 +1,10 @@
-# Make sure we're using the latest Homebrew
+# make sure we're using the latest Homebrew
 brew update
 
-# Upgrade any existing formulae
+# upgrade any existing formulae
 brew upgrade --all
 
-# Install core applications
+# install core applications
 brew install boot2docker
 brew install brew-cask
 brew install docker
@@ -14,7 +14,7 @@ brew install redis
 brew install ssh-copy-id
 brew install tree
 
-# Install cask applications
+# install cask applications
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install vagrant
