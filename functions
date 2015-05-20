@@ -1,0 +1,1 @@
+function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }

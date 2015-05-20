@@ -25,8 +25,6 @@ alias badge="tput bel"
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-function psgrep() { ps auxwww | grep -v grep | grep "$@" -i --color=auto; }
-
 # git
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
