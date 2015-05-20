@@ -72,4 +72,3 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 
 # Tighten MacVim character kerning
 defaults write org.vim.MacVim MMCellWidthMultiplier 0.9
-
