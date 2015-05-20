@@ -7,4 +7,3 @@ tmp/**/*
 db/*.sqlite3
 .tags
 .gemtags
-
