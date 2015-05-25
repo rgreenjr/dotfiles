@@ -3,7 +3,8 @@ set nocompatible
 
 " enable syntax highlighting and set theme
 syntax on
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme solarized
 
 " turn on file type detection
 filetype plugin indent on
