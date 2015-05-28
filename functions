@@ -11,3 +11,9 @@ function mkd() {
 function psgrep() {
   ps auxwww | grep -v grep | grep "$@" -i --color=auto;
 }
+
+# scp file to home
+function scph() {
+  scp "$@" rons-imac.local:~/Desktop/
+}
+
