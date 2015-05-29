@@ -39,6 +39,9 @@ alias badge="tput bel"
 # reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
+# lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # git
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
