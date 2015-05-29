@@ -1,8 +1,5 @@
-# make sure we're using the latest Homebrew
-brew update
-
-# upgrade any existing formulae
-brew upgrade --all
+# install Homebrew package manager
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install core applications
 brew install boot2docker
@@ -11,6 +8,8 @@ brew install docker
 brew install docker-compose
 brew install git
 brew install hr
+brew install pick
+brew install postgresql
 brew install redis
 brew install ssh-copy-id
 brew install tree
