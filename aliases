@@ -5,11 +5,20 @@ alias cdl='cd ~/Downloads'
 alias cddd='cd ~/code/dotfiles'
 alias cdv='cd ~/code/thrive'
 alias cdp='cd $(find . -type d | pick)'
+
+# show disk usage in human-readable output
 alias du='du -hcd0'
+
+# grep history
 alias hg='history | grep'
-alias hr='hr –'
+
+# use pick to select kill ID
 alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
+
+# list all entries in human readable format with using color and trailing slashes
 alias ll='ls -lhAGp'
+
+# open current directory in Sublime Text
 alias s='subl .'
 
 # pick command from history
