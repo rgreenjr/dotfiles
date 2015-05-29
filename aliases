@@ -55,6 +55,3 @@ alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
 
 # thrive
 alias cdv='cd ~/code/thrive'
-alias sshp='ssh production'
-alias sshs='ssh staging'
-alias ssht='ssh tunnel'
