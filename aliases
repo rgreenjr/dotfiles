@@ -2,7 +2,7 @@
 alias cdb='cd ~/bin'
 alias cdd='cd ~/Desktop'
 alias cdl='cd ~/Downloads'
-alias cddd='cd ~/code/dotfiles'
+alias cdf='cd ~/code/dotfiles'
 alias cdv='cd ~/code/thrive'
 alias cdp='cd $(find . -type d | pick)'
 
