@@ -10,8 +10,18 @@ shopt -s nocaseglob;
 # append to the bash history file instead of overwriting it
 shopt -s histappend;
 
-# autocorrect typos in path names when using `cd`
+# autocorrect cd path name typos
 shopt -s cdspell;
+
+# enable autocd and globstar in Bash 4 when possible
+shopt -s autocd globstar 2> /dev/null;
+
+# add tab completion for many Bash commands
+if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+  source "$(brew --prefix)/etc/bash_completion";
+elif [ -f /etc/bash_completion ]; then
+  source /etc/bash_completion;
+fi;
 
 # add tab completion for git
 source /usr/local/etc/bash_completion.d/git-completion.bash
