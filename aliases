@@ -1,7 +1,9 @@
-# core
+# shortcuts for common directories
 alias cdb='cd ~/bin'
 alias cdd='cd ~/Desktop'
 alias cdl='cd ~/Downloads'
+alias cddd='cd ~/code/dotfiles'
+alias cdv='cd ~/code/thrive'
 alias cdp='cd $(find . -type d | pick)'
 alias du='du -hcd0'
 alias hg='history | grep'
@@ -52,6 +54,3 @@ alias ss='bin/rails server'
 alias tlog='tail -f log/development.log'
 alias unicorn_start='bundle exec unicorn -c config/unicorn.rb -D'
 alias unicorn_stop='kill `cat tmp/pids/unicorn.pid`'
-
-# thrive
-alias cdv='cd ~/code/thrive'
