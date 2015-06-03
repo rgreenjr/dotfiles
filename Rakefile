@@ -3,9 +3,9 @@ require 'erb'
 
 desc "link Sublime Text configuration files"
 task :link_sublime_text_files do
-  `ln -sf '~/code/dotfiles/sublime/Default (OSX).sublime-keymap' '~/Library/Application Support/Sublime Text 3/Packages/User/'`
-  `ln -sf '~/code/dotfiles/sublime/Preferences.sublime-settings' '~/Library/Application Support/Sublime Text 3/Packages/User/'`
-  `ln -sf '~/code/dotfiles/sublime/puts-debug.sublime-snippet'   '~/Library/Application Support/Sublime Text 3/Packages/User/'`
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Default (OSX).sublime-keymap' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Preferences.sublime-settings' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+  `ln -sf '/Users/rgreen/code/dotfiles/sublime/puts-debug.sublime-snippet'   '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
 end
 
 desc "install the dot files into user's home directory"
