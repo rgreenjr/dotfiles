@@ -8,6 +8,7 @@ brew install docker
 brew install docker-compose
 brew install git
 brew install hr
+brew install httpie
 brew install pick
 brew install postgresql
 brew install redis
