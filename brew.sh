@@ -1,7 +1,7 @@
 # install Homebrew package manager
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install core applications
+# install core tools
 brew install boot2docker
 brew install brew-cask
 brew install docker
@@ -9,11 +9,14 @@ brew install docker-compose
 brew install git
 brew install hr
 brew install httpie
-brew install pick
 brew install postgresql
 brew install redis
 brew install ssh-copy-id
 brew install tree
+
+# install non-core tools
+brew tap thoughtbot/formulae
+brew install pick
 
 # install latest bash, add it to allowed shells list, and make it default
 brew install bash
@@ -25,7 +28,7 @@ chsh -s /usr/local/bin/bash
 # install bash-completion
 brew install bash-completion
 
-# install cask applications
+# install optional applications
 brew install caskroom/cask/brew-cask
 brew cask install alfred
 brew cask install dropbox
