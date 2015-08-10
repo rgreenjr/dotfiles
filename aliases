@@ -6,6 +6,9 @@ alias cdf='cd ~/code/dotfiles'
 alias cdv='cd ~/code/thrive'
 alias cdp='cd $(find . -type d | pick)'
 
+# colorize cat output
+alias cat=ccat
+
 # show disk usage in human-readable output
 alias du='du -hcd0'
 

@@ -4,6 +4,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # install core tools
 brew install boot2docker
 brew install brew-cask
+brew install ccat
 brew install docker
 brew install docker-compose
 brew install git
