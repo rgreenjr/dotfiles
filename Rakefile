@@ -1,22 +1,22 @@
-require 'rake'
-require 'erb'
+require "rake"
+require "erb"
 
-desc "link Sublime Text configuration files"
+desc "link Sublime Text files"
 task :link_sublime_text_files do
-  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Default (OSX).sublime-keymap' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
-  `ln -sf '/Users/rgreen/code/dotfiles/sublime/Preferences.sublime-settings' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
-  `ln -sf '/Users/rgreen/code/dotfiles/sublime/puts-debug.sublime-snippet'   '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'`
+  Dir.glob(File.join(Dir.pwd , "sublime/*")).each do |entry|
+    system "ln -sf '#{entry}' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'"
+  end
 end
 
-desc "install the dot files into user's home directory"
+desc "install dot files into user's home directory"
 task :install do
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.md osx brew.sh]
+  files = Dir["*"] - %w[Rakefile README.md osx brew.sh]
   files.each do |file|
-    system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
+    system %Q{mkdir -p "#{Dir.home}/.#{File.dirname(file)}"} if file =~ /\//
 
     filename = ".#{file.sub(/\.erb$/, '')}"
-    filepath = File.join ENV['HOME'], filename
+    filepath = File.join(Dir.home, filename)
 
     if File.exist?(filepath)
       if File.identical? file, filepath
@@ -26,14 +26,14 @@ task :install do
       else
         print "overwrite ~/#{filename}? [ynadq] "
         case $stdin.gets.chomp
-        when 'a'
+        when "a"
           replace_all = true
           replace_file(file)
-        when 'y'
+        when "y"
           replace_file(file)
-        when 'q'
+        when "q"
           exit
-        when 'd'
+        when "d"
           diff(file, filepath)
           exit
         else
