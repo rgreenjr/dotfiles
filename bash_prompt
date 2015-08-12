@@ -51,9 +51,9 @@ prompt_git() {
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
 
-    [ -n "${s}" ] && s=" ${s}";
+    [ -n "${s}" ] && s=" [${s}]";
 
-    echo -e "${reset} on ${violet}(${branchName}${s})";
+    echo -e "${reset} on ${violet}${branchName}${s}";
   else
     return;
   fi;
