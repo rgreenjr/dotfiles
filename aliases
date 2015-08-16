@@ -42,6 +42,9 @@ alias badge="tput bel"
 # reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
+# pretty print $PATH
+alias path='echo $PATH | tr -s ":" "\n"'
+
 # lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
