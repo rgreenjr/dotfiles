@@ -10,7 +10,7 @@ alias cdp='cd $(find . -type d | pick)'
 alias cat=ccat
 
 # show disk usage in human-readable output
-alias du='du -hcd0'
+alias du='du -h -d 2'
 
 # grep history
 alias hg='history | grep'
