@@ -1,4 +1,9 @@
+# make tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# list all matches when multiple possible completions exist
+set show-all-if-ambiguous on
+
+# filtered history search
 "\C-p": history-search-backward
 "\C-n": history-search-forward
-set show-all-if-ambiguous on
-set completion-ignore-case on
