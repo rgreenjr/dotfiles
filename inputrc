@@ -4,6 +4,17 @@ set completion-ignore-case on
 # list all matches when multiple possible completions exist
 set show-all-if-ambiguous on
 
+# show extra file information when completing, like `ls -F` does
+set visible-stats on
+
+# skip already completed text when autocompleting and cursor isn't at end of line
+set skip-completed-text on
+
+# allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
+set input-meta on
+set output-meta on
+set convert-meta off
+
 # iterate through autocompletion matches with shift-tab
 "\e[Z": menu-complete
 
