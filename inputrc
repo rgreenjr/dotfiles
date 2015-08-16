@@ -4,6 +4,9 @@ set completion-ignore-case on
 # list all matches when multiple possible completions exist
 set show-all-if-ambiguous on
 
+# iterate through autocompletion matches with shift-tab
+"\e[Z": menu-complete
+
 # filtered history search
 "\C-p": history-search-backward
 "\C-n": history-search-forward
