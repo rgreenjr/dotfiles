@@ -2,6 +2,7 @@
 set nocompatible
 
 " enable syntax highlighting and set theme
+" https://github.com/altercation/vim-colors-solarized
 syntax on
 set background=dark
 colorscheme solarized
