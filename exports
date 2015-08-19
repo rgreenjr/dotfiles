@@ -13,3 +13,7 @@ export LESS_TERMCAP_md="${yellow}";
 
 # always enable colored grep output
 export GREP_OPTIONS='--color=auto';
+
+# install in root directory instead of home directory
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
