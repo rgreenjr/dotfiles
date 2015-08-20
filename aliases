@@ -48,6 +48,12 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# sort top by CPU usage
+alias cpu='top -o cpu'
+
+# sort top by memory usage
+alias mem='top -o rsize'
+
 # git
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
