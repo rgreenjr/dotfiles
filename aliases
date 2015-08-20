@@ -54,6 +54,12 @@ alias cpu='top -o cpu'
 # sort top by memory usage
 alias mem='top -o rsize'
 
+# copy output of last command to clipboard
+alias cl="fc -e -| pbcopy"
+
+# copy working directory path
+alias cpwd='pwd | tr -d "\n" | pbcopy'
+
 # git
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
