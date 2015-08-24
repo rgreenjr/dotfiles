@@ -1,6 +1,6 @@
 {
 	"auto_complete": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
@@ -25,7 +25,7 @@
 	"soda_classic_tabs": true,
 	"soda_folder_icons": true,
 	"tab_size": 2,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Flatland Dark.sublime-theme",
 	"trailing_spaces_include_current_line": false,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
