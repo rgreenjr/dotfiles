@@ -67,6 +67,13 @@ defaults write com.apple.iTunes invertStoreLinks -bool YES
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 ###############################################################################
+# Sound                                                                       #
+###############################################################################
+
+# Play sound effect when power cable is plugged in (like iOS)
+defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/Library/CoreServices/PowerChime.app &
+
+###############################################################################
 # MacVim                                                                      #
 ###############################################################################
 
