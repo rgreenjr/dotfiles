@@ -3,7 +3,8 @@
 	"color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"ensure_newline_at_eof_on_save": true,
-	"fold_buttons": false,
+	"fade_fold_buttons": true,
+	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
 		".bundle",
