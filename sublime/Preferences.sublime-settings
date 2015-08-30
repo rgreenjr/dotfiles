@@ -13,8 +13,8 @@
 		"tmp",
 		"log"
 	],
-	"font_face": "Monaco",
-	"font_size": 12.0,
+	"font_face": "Consolas",
+	"font_size": 13.0,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
