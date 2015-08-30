@@ -23,8 +23,6 @@
 	],
 	"index_files": true,
 	"preview_on_click": false,
-	"soda_classic_tabs": true,
-	"soda_folder_icons": true,
 	"tab_size": 2,
 	"theme": "Flatland Dark.sublime-theme",
 	"trailing_spaces_include_current_line": false,
