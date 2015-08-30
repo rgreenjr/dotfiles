@@ -31,4 +31,11 @@
 	// color scheme and theme settings
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"theme": "Material-Theme.sublime-theme",
+
+
+	// Material Theme settings
+	"material_theme_panel_separator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_separator": true,
 }
