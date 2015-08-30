@@ -21,17 +21,20 @@
 		"Vintage"
 	],
 	"index_files": true,
+	"indent_guide_options":
+	[
+	  "draw_normal",
+	  "draw_active"
+	],
 	"preview_on_click": false,
 	"tab_size": 2,
 	"trailing_spaces_include_current_line": false,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 
-
 	// color scheme and theme settings
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"theme": "Material-Theme.sublime-theme",
-
 
 	// Material Theme settings
 	"material_theme_panel_separator": true,
