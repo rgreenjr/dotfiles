@@ -1,5 +1,6 @@
 {
 	"auto_complete": true,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"copy_with_empty_selection": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
@@ -14,33 +15,38 @@
 		"log"
 	],
 	"font_face": "Consolas",
-	"font_options": [ "gray_antialias" ],
+	"font_options":
+	[
+		"gray_antialias"
+	],
 	"font_size": 13.0,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"index_files": true,
 	"indent_guide_options":
 	[
-	  "draw_normal",
-	  "draw_active"
+		"draw_normal",
+		"draw_active"
 	],
-	"overlay_scroll_bars": "enabled",
-	"preview_on_click": false,
-	"tab_size": 2,
-	"trailing_spaces_include_current_line": false,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-
-	// color scheme and theme settings
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-	"theme": "Material-Theme.sublime-theme",
-
-	// Material Theme settings
+	"index_files": true,
+	"line_padding_bottom": -1,
+	"line_padding_top": 4,
 	"material_theme_panel_separator": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"material_theme_tabs_separator": true,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": false,
+	"rulers":
+	[
+		110
+	],
+	"tab_size": 2,
+	"theme": "Material-Theme.sublime-theme",
+	"trailing_spaces_include_current_line": false,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
