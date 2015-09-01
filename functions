@@ -17,8 +17,9 @@ function scph() {
   scp "$@" rons-imac.local:~/Desktop/
 }
 
+# copy if stdin available, otherwise paste
 function clip() {
-  [ -t 0 ] && pbpaste || pbcopy
+  [ -t 0 ] && pbpaste || pbcopy;
 }
 
 function nab() {
