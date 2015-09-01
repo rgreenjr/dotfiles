@@ -22,6 +22,7 @@ function clip() {
   [ -t 0 ] && pbpaste || pbcopy;
 }
 
+# pipe given command to paste board
 function nab() {
-  echo `$@` | clip
+  "$@" | tr '\n' ' ' | pbcopy;
 }
