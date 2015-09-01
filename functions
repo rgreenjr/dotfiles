@@ -17,3 +17,10 @@ function scph() {
   scp "$@" rons-imac.local:~/Desktop/
 }
 
+function clip() {
+  [ -t 0 ] && pbpaste || pbcopy
+}
+
+function nab() {
+  echo `$@` | clip
+}
