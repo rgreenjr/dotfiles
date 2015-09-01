@@ -1,0 +1,15 @@
+{
+	"extensions":
+	[
+		"bash",
+		"zsh",
+		"sh",
+		"inputrc",
+		"aliases",
+		"bash_profile",
+		"bash_prompt",
+		"bashrc",
+		"functions",
+		"exports"
+	]
+}
