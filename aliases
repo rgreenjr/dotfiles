@@ -6,6 +6,7 @@ alias cdf='cd ~/code/dotfiles'
 alias cdv='cd ~/code/thrive'
 alias cdp='cd $(find . -type d | pick)'
 alias cdst='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/'
+alias cdww='cd ~/Documents/Westwood\ Lacrosse/laxsite'
 
 # colorize cat output
 alias cat=ccat
