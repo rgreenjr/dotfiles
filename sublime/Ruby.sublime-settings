@@ -9,7 +9,9 @@
 		"simplecov",
 		"thor",
 		"ruby.rails",
-		"ru"
+		"ru",
+		"Guardfile",
+		"Vagrantfile"
 	],
 	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
 }
