@@ -1,0 +1,15 @@
+{
+	"extensions":
+	[
+		"rabl",
+		"jbuilder",
+		"rb",
+		"podspec",
+		"rake",
+		"simplecov",
+		"thor",
+		"ruby.rails",
+		"ru"
+	],
+	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
+}
