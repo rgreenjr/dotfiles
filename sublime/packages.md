@@ -14,6 +14,7 @@ Package Control
 PackageResourceViewer
 PostgreSQL Syntax Highlighting
 Pretty JSON
+Rails OpenView
 Rails Partial
 RSpec
 RuboCop
