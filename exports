@@ -17,5 +17,5 @@ export GREP_OPTIONS='--color=auto';
 # make homebrew install in root directory instead of home directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# use Sublime Text for editing
-export EDITOR=subl
+# set editor to sublime
+export EDITOR='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
