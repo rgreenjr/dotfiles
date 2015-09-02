@@ -26,3 +26,8 @@ function clip() {
 function nab() {
   "$@" | tr '\n' ' ' | pbcopy;
 }
+
+# show broken symlinks
+function broken_links() {
+  find -L . -type l -ls;
+}
