@@ -22,9 +22,9 @@ function clip() {
   [ -t 0 ] && pbpaste || pbcopy;
 }
 
-# pipe given command to paste board
+# copy result of given command to paste board
 function nab() {
-  "$@" | tr '\n' ' ' | pbcopy;
+  echo -n `$@` | pbcopy && pbpaste;
 }
 
 # show broken symlinks
