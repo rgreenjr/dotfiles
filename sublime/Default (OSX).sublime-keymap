@@ -5,9 +5,6 @@
   { "keys": ["ctrl+shift+."], "command": "erb" },
   { "keys": ["super+shift+r"], "command": "reindent" , "args": { "single_line": false } },
   { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+1"], "command": "open_related_rails_model" },
-  { "keys": ["super+2"], "command": "open_related_rails_controller" },
-  { "keys": ["super+3"], "command": "open_related_rails_view" },
   { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
   // { "keys": ["super+shift+r"], "command": "goto_definition" }
 ]
