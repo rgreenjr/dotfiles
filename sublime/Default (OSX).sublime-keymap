@@ -6,5 +6,5 @@
   { "keys": ["super+shift+r"], "command": "reindent" , "args": { "single_line": false } },
   { "keys": ["super+v"], "command": "paste_and_indent" },
   { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
-  // { "keys": ["super+shift+r"], "command": "goto_definition" }
+  { "keys": ["super+shift+r"], "command": "goto_definition" }
 ]
