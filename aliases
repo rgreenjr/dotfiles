@@ -20,7 +20,7 @@ alias hg='history | grep'
 # use pick to select kill ID
 alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do | tail -n +2)'
 
-# list all entries in human readable format with using color and trailing slashes
+# list all entries in human readable format with color and trailing slashes
 alias ll='ls -lhAGp'
 
 # open current directory in Sublime Text
