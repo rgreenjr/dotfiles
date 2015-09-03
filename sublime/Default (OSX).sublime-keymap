@@ -9,5 +9,5 @@
   { "keys": ["super+3"], "command": "rails_open_view" },
   { "keys": ["super+alt+r"], "command": "goto_definition" },
   { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
-  { "keys": ["ctrl+enter"], "command": "shell_command" }
+  { "keys": ["ctrl+enter"], "command": "side_bar_reveal" }
 ]
