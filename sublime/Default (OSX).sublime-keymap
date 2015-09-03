@@ -8,5 +8,6 @@
   { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
   { "keys": ["super+3"], "command": "rails_open_view" },
   { "keys": ["super+alt+r"], "command": "goto_definition" },
-  { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" }
+  { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
+  { "keys": ["ctrl+enter"], "command": "shell_command" }
 ]
