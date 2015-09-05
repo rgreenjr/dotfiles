@@ -4,6 +4,7 @@
 		".jscsrc",
 		".csslintrc",
 		".jshintrc",
-		".jsbeautifyrc"
+		".jsbeautifyrc",
+		"sublime-commands"
 	]
 }
