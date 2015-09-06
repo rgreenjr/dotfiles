@@ -79,3 +79,10 @@ defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/
 
 # Tighten MacVim character kerning
 defaults write org.vim.MacVim MMCellWidthMultiplier 0.9
+
+###############################################################################
+# Sublime Text 3                                                              #
+###############################################################################
+
+# Enable press and hold key repeat
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
