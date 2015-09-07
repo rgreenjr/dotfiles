@@ -3,6 +3,8 @@ ApplySyntax
 Better CoffeeScript
 Color Highlighter
 DashDoc
+Elixir
+ElixirSublime
 Emmet
 Git
 GitGutter
