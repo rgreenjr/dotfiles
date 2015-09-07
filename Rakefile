@@ -1,7 +1,7 @@
 require "rake"
 require "erb"
 
-desc "link Sublime Text files"
+desc "Symlink Sublime Text files"
 task :link_sublime_text_files do
   Dir.glob(File.join(Dir.pwd , "sublime/*")).each do |entry|
     next if entry =~ /.*packages.md\z/
@@ -9,10 +9,10 @@ task :link_sublime_text_files do
   end
 end
 
-desc "install dot files into user's home directory"
+desc "Install dotfiles in home directory"
 task :install do
   replace_all = false
-  files = Dir["*"] - %w[Rakefile README.md osx brew.sh]
+  files = Dir["*"] - %w[Rakefile README.md osx brew.sh sublime]
   files.each do |file|
     system %Q{mkdir -p "#{Dir.home}/.#{File.dirname(file)}"} if file =~ /\//
 
