@@ -18,4 +18,4 @@ export GREP_OPTIONS='--color=auto';
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # set editor to sublime
-export EDITOR='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+export EDITOR='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl -w'
