@@ -12,7 +12,7 @@ end
 desc "Install dotfiles in home directory"
 task :install do
   replace_all = false
-  files = Dir["*"] - %w[Rakefile README.md osx brew.sh sublime]
+  files = Dir["*"] - %w[Rakefile README.md osx install.sh sublime]
   files.each do |file|
     system %Q{mkdir -p "#{Dir.home}/.#{File.dirname(file)}"} if file =~ /\//
 
