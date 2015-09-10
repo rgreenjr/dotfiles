@@ -36,7 +36,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 
 # flush and reset all DNS caches
-alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # ring terminal bell and put badge on terminal icon
 alias badge="tput bel"
