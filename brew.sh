@@ -1,3 +1,5 @@
+# Script to install binaries
+
 # install Homebrew package manager
 if ! which -s brew ; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,6 +14,7 @@ brew install docker-compose
 brew install git
 brew install hr
 brew install httpie
+brew install node
 brew install pick
 brew install postgresql
 brew install redis
@@ -43,3 +46,6 @@ brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
+
+# install coffeescript
+npm install -g coffee-script
