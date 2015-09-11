@@ -70,3 +70,5 @@ end
 def diff(file1, file2)
   system %Q{diff #{file1} #{file2}}
 end
+
+task default: [:install, :link_sublime_text_files]
