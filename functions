@@ -1,6 +1,6 @@
-# run `dig` and display the most useful info
+# run dig and display the most useful info
 function digga() {
-  dig +nocmd "$1" any +multiline +noall +answer;
+  dig ANY +noadditional +noquestion +nocomments +nocmd +nostats "$1";
 }
 
 # create a new directory and enter it
