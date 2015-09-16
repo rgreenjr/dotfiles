@@ -17,6 +17,11 @@
                 "args": [],
                 "excludes": []
             },
+            "elixirlinter": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "htmltidy": {
                 "@disable": false,
                 "args": [],
