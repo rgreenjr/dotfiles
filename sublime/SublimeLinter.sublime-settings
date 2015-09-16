@@ -20,7 +20,10 @@
             "htmltidy": {
                 "@disable": false,
                 "args": [],
-                "excludes": []
+                "excludes": [],
+                "ignore_match": [
+                    "trimming empty <i>"
+                ]
             },
             "jshint": {
                 "@disable": false,
