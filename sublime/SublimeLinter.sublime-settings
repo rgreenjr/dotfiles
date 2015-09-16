@@ -30,6 +30,7 @@
                     "<.*> proprietary attribute \"aria-hidden\"",
                     "<.*> proprietary attribute \"role\"",
                     "trimming empty <b>",
+                    "trimming empty <button>",
                     "trimming empty <i>",
                     "trimming empty <li>",
                     "trimming empty <span>"
