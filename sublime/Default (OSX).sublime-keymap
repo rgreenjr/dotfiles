@@ -10,5 +10,6 @@
   { "keys": ["super+alt+r"], "command": "goto_definition" },
   { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
   { "keys": ["ctrl+enter"], "command": "side_bar_reveal" },
-  { "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "tag"} }
+  { "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
+  { "keys": ["super+shift+alt+."], "command": "run_emmet_action", "args": {"action": "select_previous_item"} }
 ]
