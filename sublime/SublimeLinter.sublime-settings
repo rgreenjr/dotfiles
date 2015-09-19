@@ -34,6 +34,7 @@
                     "<.*> proprietary attribute \"aria-expanded\"",
                     "<.*> proprietary attribute \"aria-hidden\"",
                     "<.*> proprietary attribute \"data-.*\"",
+                    "<.*> proprietary attribute \"hidden\"",
                     "<.*> proprietary attribute \"role\"",
                     "plain text isn't allowed in <head> elements",
                     "trimming empty <b>",
