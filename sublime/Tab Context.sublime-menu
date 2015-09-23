@@ -1,3 +1,5 @@
 [
-  { "command": "copy_path", "caption": "Copy File Path" }
+  { "command": "copy_path", "caption": "Copy File Path" },
+  { "command": "side_bar_move", "caption": "Move File" },
+  { "command": "side_bar_rename", "caption": "Rename File" }
 ]
