@@ -1,3 +1,12 @@
+# Notes
+
+Enable command logging
+
+```
+sublime.log_commands(True)
+```
+
+# Packages
 All Autocomplete
 ApplySyntax
 Better CoffeeScript

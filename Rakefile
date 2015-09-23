@@ -4,7 +4,7 @@ require "erb"
 desc "Symlink Sublime Text files"
 task :link_sublime_text_files do
   Dir.glob(File.join(Dir.pwd , "sublime/*")).each do |entry|
-    next if entry =~ /.*packages.md\z/
+    next if entry =~ /.*NOTES.md\z/
     puts "symlinking #{File.basename(entry)}"
     system "ln -sf '#{entry}' '/Users/rgreen/Library/Application Support/Sublime Text 3/Packages/User/'"
   end
