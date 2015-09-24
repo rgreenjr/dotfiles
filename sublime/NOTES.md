@@ -1,10 +1,25 @@
 # Notes
 
+# General
+
 Enable command logging
 
 ```
 sublime.log_commands(True)
 ```
+
+# Emmet Actions
+
+- Balance Outward (searches outward and selects it) `CTRL + D`
+- Balance Inward (searches inward and selects it) `CTRL + J`
+- Expand Select to Tag `CMD + SHIFT + A`
+- Goto Matching Pair `CTRL + SHIFT + '`
+- Goto Next Edit Point (goto next edit point wihtout content) `CTRL + ALT + →`
+- Goto Previous Edit Point (goto previous edit point wihtout content) `CTRL + ALT + ←`
+- Select Next Item `CMD + SHIFT + .`
+- Select Previous Item `CMD + SHIFT + ALT + .`
+- Rename Tag `SHIFT + CMD + K`
+- Remove Tag `CMD + ALT + K` 
 
 # Packages
 All Autocomplete
