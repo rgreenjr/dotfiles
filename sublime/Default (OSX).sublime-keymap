@@ -12,6 +12,6 @@
   { "keys": ["ctrl+enter"], "command": "side_bar_reveal" },
   { "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
   { "keys": ["super+alt+k"], "command": "run_emmet_action", "args": { "action": "remove_tag" } },
-  { "keys": ["ctrl+shift+'"], "command": "run_emmet_action", "args": { "action": "matching_pair" } },
+  { "keys": ["ctrl+shift+t"], "command": "run_emmet_action", "args": { "action": "matching_pair" } },
   { "keys": ["super+shift+alt+."], "command": "run_emmet_action", "args": {"action": "select_previous_item"} }
 ]

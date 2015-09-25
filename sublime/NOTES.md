@@ -13,7 +13,7 @@ sublime.log_commands(True)
 - Balance Outward (searches outward and selects it) `CTRL + D`
 - Balance Inward (searches inward and selects it) `CTRL + J`
 - Expand Select to Tag `CMD + SHIFT + A`
-- Goto Matching Pair `CTRL + SHIFT + '`
+- Goto Matching Pair `CTRL + SHIFT + T`
 - Goto Next Edit Point (goto next edit point wihtout content) `CTRL + ALT + →`
 - Goto Previous Edit Point (goto previous edit point wihtout content) `CTRL + ALT + ←`
 - Select Next Item `CMD + SHIFT + .`
