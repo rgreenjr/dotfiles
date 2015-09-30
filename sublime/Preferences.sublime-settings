@@ -37,8 +37,9 @@
 		".capistrano",
 		".git",
 		".vagrant",
-		"tmp",
-		"log"
+		"_build",
+		"log",
+		"tmp"
 	],
 	"font_face": "Consolas",
 	"font_options":
