@@ -38,7 +38,9 @@
 		".git",
 		".vagrant",
 		"_build",
+		"deps",
 		"log",
+		"node_modules",
 		"tmp"
 	],
 	"font_face": "Consolas",
