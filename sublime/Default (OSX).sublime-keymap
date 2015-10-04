@@ -14,5 +14,5 @@
   { "keys": ["super+alt+k"], "command": "run_emmet_action", "args": { "action": "remove_tag" } },
   { "keys": ["ctrl+shift+t"], "command": "run_emmet_action", "args": { "action": "matching_pair" } },
   { "keys": ["super+shift+alt+."], "command": "run_emmet_action", "args": { "action": "select_previous_item" } },
-  { "keys": ["j", "j"], "command": "_enter_normal_mode", "args": { "mode": "mode_insert" }, "context": [{ "key": "vi_insert_mode_aware" }] }
+  { "keys": ["j", "k"], "command": "_enter_normal_mode", "args": { "mode": "mode_insert" }, "context": [{ "key": "vi_insert_mode_aware" }] }
 ]
