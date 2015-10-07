@@ -111,6 +111,9 @@ if has("gui_running")
   set guifont=Consolas:h13
 endif
 
+" remap 'jk' to <Esc>
+:imap jk <Esc>
+
 " Command-T Rails Shortcuts
 map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
