@@ -21,3 +21,6 @@ set convert-meta off
 # filtered history search
 "\C-p": history-search-backward
 "\C-n": history-search-forward
+
+# delete to previous slash
+"\C-b": unix-filename-rubout
