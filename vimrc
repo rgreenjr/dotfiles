@@ -108,7 +108,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " remove MacVim toolbar and set font
 if has("gui_running")
   set guioptions-=T
-  set guifont=Menlo:h12
+  set guifont=Consolas:h13
 endif
 
 " Command-T Rails Shortcuts
