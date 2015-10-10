@@ -83,7 +83,7 @@ set wildmode=list:longest
 set visualbell
 
 " highlight screen line of cursor
-"set cursorline
+set cursorline
 
 set ttyfast
 set backspace=indent,eol,start
