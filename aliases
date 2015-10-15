@@ -62,6 +62,9 @@ alias cl="fc -e -| pbcopy"
 # copy working directory path
 alias cpwd='pwd | tr -d "\n" | pbcopy'
 
+# brew
+alias bro="brew update && brew outdated"
+
 # git
 alias ghid='ghi open --claim --label devops'
 alias ghie='ghi open --claim --label enhancement'
