@@ -19,6 +19,7 @@ brew install pick
 brew install postgresql
 brew install redis
 brew install ssh-copy-id
+brew install tidy-html5
 brew install tree
 
 # install non-core tools
