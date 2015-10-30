@@ -1,129 +1,63 @@
-" use vim defaults
-set nocompatible
+set nocompatible                " use vim defaults
 
-" enable syntax highlighting and set theme
-" https://github.com/altercation/vim-colors-solarized
-syntax on
-set background=dark
-colorscheme solarized
+syntax on                       " enable syntax highlighting
+set background=dark             " use dark background
+colorscheme solarized           " https://github.com/altercation/vim-colors-solarized
 
-" turn on file type detection
-filetype plugin indent on
+filetype indent on              " turn on file type detection
 
-" force encoding
-set encoding=utf-8
+set encoding=utf-8              " force encoding
+set nobackup                    " disable automatic backup
+set noswapfile                  " disable buffer swapfile
+set hidden                      " handle unsaved buffers better
 
-" increase history line memory
-set history=2000
+set showcmd                     " show incomplete commands
+set number                      " show line numbers
+set ruler                       " show current row and column
+set title                       " show window title
+set matchtime=2                 " show matching brackets for 200ms
+set list                        " show whitepsace characters
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-" display line numbers, current position, and window title
-set number
-set ruler
-set title
+set hlsearch                    " highlight searches
+set incsearch                   " enable incremental searching
+set showmatch                   " jump to match when entering regex
+set ignorecase                  " ignore case when searching
+set smartcase                   " don't ignorecase if uppercase char present
 
-" ignore case when searching unless uppercase used
-set ignorecase
-set smartcase
+set expandtab                   " use spaces instead of tabs
+set shiftwidth=2                " set shift indent to 2 chars
+set softtabstop=2               " tab equals two spaces when editing
+set tabstop=2                   " tab equals two spaces when rendering
+set autoindent                  " use indent from current line on new lines
+set smartindent                 " use context to autoindent new lines
+set wrap                        " make Vim handle long lines better
+set backspace=indent,eol,start  " allow backspacing over these chars
 
-" highlight search results and show incremental matches
-set hlsearch
-set incsearch
+set wildmenu                    " enable command line enhancements
+set wildmode=list:longest       " complete files like shell
+set history=2000                " increase history line memory
+set showmode                    " show incomplete commands
+set scrolloff=3                 " show 3 screen lines above and below cursor
+set visualbell                  " no beeping
+set cursorline                  " highlight screen line of cursor
+set shortmess+=I                " suppress splash screen text
+set ttyfast                     " assume fast connection
 
 " use standard regex syntax
 nnoremap / /\v
 vnoremap / /\v
 
-" clear search highlighting
-nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
-
-" show matching brackets for 200ms when cursor is over them
-set showmatch
-set matchtime=2
-
-" turn backup off
-set nobackup
-set nowritebackup
-set noswapfile
-
-" show whitepsace characters
-set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
-
-" use spaces instead of tabs
-set expandtab
-set smarttab
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set shiftround
-
-" copy indent from current line when starting a new line
-set autoindent
-set smartindent
-
-" show 3 screen lines above and below cursor
-set scrolloff=3
-
-" show incomplete commands
-set showmode
-
-" show current mode
-set showcmd
-
-" handle unsaved buffers better
-set hidden
-
-" enable command line enhancements
-set wildmenu
-
-" complete files like shell
-set wildmode=list:longest
-
-" no beeping
-set visualbell
-
-" highlight screen line of cursor
-set cursorline
-
-set ttyfast
-set backspace=indent,eol,start
-set laststatus=2
-
-" suppress splash screen text
-set shortmess+=I
-
-
-" make Vim handle long lines correctly
-set wrap
-" set textwidth=79
-" set formatoptions=qrn1
-"set colorcolumn=85
-
-" strip trailing whitespace in current file
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-
-" Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-" remove MacVim toolbar and set font
-if has("gui_running")
-  set guioptions-=T
-  set guifont=Consolas:h13
-endif
-
 " remap 'jk' to <Esc>
 :imap jk <Esc>
 
-" Command-T Rails Shortcuts
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT spec/models<cr>
-map <leader>gr :CommandTFlush<cr>\|:CommandT spec/requests<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
-map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+" strip trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" clear search highlighting
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+
+if has("gui_running")
+  set guioptions-=T           " remove MacVim toolbar
+  set guifont=Consolas:h13    " set MacVim font
+endif
