@@ -31,3 +31,8 @@ function nab() {
 function broken_links() {
   find -L . -type l -ls;
 }
+
+# open man page directly at given flag
+function manf() {
+  man -P "less -p \"^ +$2\"" $1
+}
