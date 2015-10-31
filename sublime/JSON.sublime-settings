@@ -1,10 +1,12 @@
 {
 	"extensions":
 	[
-		".jscsrc",
-		".csslintrc",
 		".jshintrc",
-		".jsbeautifyrc",
-		"sublime-commands"
+		"sublime-commands",
+		".csslintrc",
+		".eslintrc",
+		".jscsrc",
+		".bowerrc",
+		".jsbeautifyrc"
 	]
 }
