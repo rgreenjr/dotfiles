@@ -7,6 +7,7 @@ call vundle#begin()               " start Vundle setup
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 call vundle#end()                 " end Vundle setup
