@@ -58,6 +58,11 @@ set visualbell                    " no beeping
 set shortmess+=I                  " suppress splash screen text
 set ttyfast                       " assume fast connection
 
+if has("gui_running")
+  set guioptions-=T               " remove MacVim toolbar
+  set guifont=Consolas:h13        " set MacVim font
+endif
+
 " use standard regex syntax
 nnoremap / /\v
 vnoremap / /\v
@@ -74,7 +79,5 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " clear search highlighting
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
-if has("gui_running")
-  set guioptions-=T           " remove MacVim toolbar
-  set guifont=Consolas:h13    " set MacVim font
-endif
+set secure                        " disable commands in unowned vimrc files
+
