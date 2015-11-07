@@ -1,50 +1,61 @@
-set nocompatible                " use vim behaviors, not vi
-set encoding=utf-8              " use utf-8 encoding
-set nobackup                    " don't backup
-set nowritebackup               " write files in place
-set noswapfile                  " don't use swap files (.swp)
-set autoread                    " autoreload buffers
-set autowrite                   " save changes before switching buffers
+set nocompatible                  " use vim behaviors, not vi
 
-syntax on                       " enable syntax highlighting
-set background=dark             " use dark background
-colorscheme solarized           " https://github.com/altercation/vim-colors-solarized
+""" Vundle
+filetype off                      " turn off file type detection
+set rtp+=~/.vim/bundle/Vundle.vim " set runtime path to include Vundle
+call vundle#begin()               " start Vundle setup
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-surround'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+call vundle#end()                 " end Vundle setup
+filetype plugin indent on         " auto detect file types
 
-filetype indent on              " turn on file type detection
+set encoding=utf-8                " use utf-8 encoding
+set nobackup                      " don't backup
+set nowritebackup                 " write files in place
+set noswapfile                    " don't use swap files (.swp)
+set autoread                      " autoreload buffers
+set autowrite                     " save changes before switching buffers
 
-set laststatus=2                " always show status line
-set showcmd                     " show incomplete commands
-set number                      " show line numbers
-set ruler                       " show cursor postion
-set title                       " show window title
-set cursorline                  " highlight screen line of cursor
-set colorcolumn=100             " highlight column
-set matchtime=2                 " show matching brackets for 200ms
+syntax on                         " enable syntax highlighting
+set background=dark               " use dark background
+colorscheme solarized             " use solarized color scheme
 
-set hlsearch                    " highlight searches
-set incsearch                   " enable incremental searching
-set showmatch                   " jump to match when entering regex
-set ignorecase                  " ignore case when searching
-set smartcase                   " don't ignore case if uppercase char present
+set laststatus=2                  " always show status line
+set showcmd                       " show incomplete commands
+set number                        " show line numbers
+set ruler                         " show cursor postion
+set title                         " show window title
+set cursorline                    " highlight screen line of cursor
+set colorcolumn=100               " highlight column
+set matchtime=2                   " show matching brackets for 200ms
 
-set expandtab                   " expand tabs to spaces
-set shiftwidth=2                " reindent with 2 spaces (using <<)
-set softtabstop=2               " tab equals two spaces when editing
-set tabstop=2                   " tabs are always 2 spaces
-set autoindent                  " use indent from current line on new lines
-set smartindent                 " use context to autoindent new lines
-set backspace=indent,eol,start  " allow backspacing over everything
-set list                        " show whitepsace characters
-set lcs=tab:».,trail:.,nbsp:.   " display whitespace characters as '.'
+set hlsearch                      " highlight searches
+set incsearch                     " enable incremental searching
+set showmatch                     " jump to match when entering regex
+set ignorecase                    " ignore char case when searching
+set smartcase                     " unless uppercase char present
 
-set wildmenu                    " enable command line enhancements
-set wildmode=list:longest       " complete files like shell
-set history=2000                " increase history line memory
-set showmode                    " show incomplete commands
-set scrolloff=3                 " show 3 screen lines above and below cursor
-set visualbell                  " no beeping
-set shortmess+=I                " suppress splash screen text
-set ttyfast                     " assume fast connection
+set expandtab                     " expand tabs to spaces
+set shiftwidth=2                  " reindent with 2 spaces (using <<)
+set softtabstop=2                 " tab equals two spaces when editing
+set tabstop=2                     " tabs are always 2 spaces
+set autoindent                    " use indent from current line on new lines
+set smartindent                   " use context to autoindent new lines
+set backspace=indent,eol,start    " allow backspacing over everything
+set list                          " show whitepsace characters
+set lcs=tab:».,trail:.,nbsp:.     " display whitespace characters as '.'
+
+set wildmenu                      " enable command line enhancements
+set wildmode=list:longest         " complete files like shell
+set history=2000                  " increase history line memory
+set showmode                      " show incomplete commands
+set scrolloff=3                   " show 3 screen lines above and below cursor
+set visualbell                    " no beeping
+set shortmess+=I                  " suppress splash screen text
+set ttyfast                       " assume fast connection
 
 " use standard regex syntax
 nnoremap / /\v
