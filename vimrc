@@ -10,6 +10,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'altercation/vim-colors-solarized'
 call vundle#end()                 " end Vundle setup
 filetype plugin indent on         " auto detect file types
 
