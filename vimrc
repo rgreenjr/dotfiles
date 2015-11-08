@@ -68,6 +68,10 @@ endif
 nnoremap / /\v
 vnoremap / /\v
 
+" enable tab indent and shfit-tab unindent
+vnoremap <silent> <TAB> >gv
+vnoremap <silent> <S-TAB> <gv
+
 " remap 'jk' to <Esc>
 :imap jk <Esc>
 
