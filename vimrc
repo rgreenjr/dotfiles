@@ -75,14 +75,14 @@ vnoremap <silent> <S-TAB> <gv
 " remap 'jk' to <Esc>
 :imap jk <Esc>
 
-" remap leader to space
-let mapleader = " "
-
 " strip trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " clear search highlighting
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+
+" remap leader to space
+let mapleader = " "
 
 set secure                        " disable commands in unowned vimrc files
 
