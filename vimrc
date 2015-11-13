@@ -1,4 +1,5 @@
 set nocompatible                  " use vim behaviors, not vi
+let mapleader = " "               " remap leader to space
 
 """ Vundle
 filetype off                      " turn off file type detection
@@ -80,9 +81,6 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " clear search highlighting
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
-
-" remap leader to space
-let mapleader = " "
 
 set secure                        " disable commands in unowned vimrc files
 
