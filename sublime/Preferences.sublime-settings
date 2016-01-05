@@ -63,6 +63,7 @@
 	"index_files": true,
 	"line_padding_bottom": -1,
 	"line_padding_top": 4,
+	"material_theme_compact_sidebar": true,
 	"material_theme_contrast_mode": true,
 	"material_theme_panel_separator": true,
 	"material_theme_small_statusbar": true,
