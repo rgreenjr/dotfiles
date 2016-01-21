@@ -26,6 +26,27 @@ brew install tree
 brew tap thoughtbot/formulae
 brew install pick
 
+# install optional applications
+brew install caskroom/cask/brew-cask
+brew cask install alfred
+brew cask install dropbox
+brew cask install firefox
+brew cask install google-chrome
+brew cask install transmission
+brew cask install vagrant
+brew cask install virtualbox
+brew cask install vlc
+
+# install video_transcoding packages
+brew install ffmpeg
+brew install mkvtoolnix
+brew install mp4v2
+brew install mplayer
+brew cask install handbreakcli
+
+# install coffeescript
+npm install -g coffee-script
+
 # install latest bash, add it to allowed shells list, and make it default
 brew install bash
 if [ $(cat /private/etc/shells | grep '/usr/local/bin/bash' | wc -l) -eq 0 ]; then
@@ -35,18 +56,3 @@ chsh -s /usr/local/bin/bash
 
 # install bash-completion
 brew install bash-completion
-
-# install optional applications
-brew install caskroom/cask/brew-cask
-brew cask install alfred
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-chrome
-brew cask install handbreakcli
-brew cask install transmission
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vlc
-
-# install coffeescript
-npm install -g coffee-script
