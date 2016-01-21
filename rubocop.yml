@@ -1,0 +1,23 @@
+# Rubocop configuration file
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.2
+Style/ConditionalAssignment:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/MultilineMethodCallIndentation:
+  Enabled: false
+Style/MultilineOperationIndentation:
+   EnforcedStyle: indented
+Style/Proc:
+  Enabled: false
+Style/SignalException:
+  EnforcedStyle: only_raise
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
