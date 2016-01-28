@@ -64,8 +64,8 @@ alias cl="fc -e -| pbcopy"
 alias cpwd='pwd | tr -d "\n" | pbcopy'
 
 # brew
-alias bro="brew update && hr - && brew outdated"
-alias brah="brew cleanup && brew doctor"
+alias bb="brew update && hr - && brew outdated"
+alias bbb="brew cleanup && brew doctor"
 
 # git
 alias ghid='ghi open --claim --label devops'
