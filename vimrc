@@ -59,6 +59,7 @@ set scrolloff=3                   " show 3 screen lines above and below cursor
 set visualbell                    " no beeping
 set shortmess+=I                  " suppress splash screen text
 set ttyfast                       " assume fast connection
+set secure                        " disable commands in unowned vimrc files
 
 if has("gui_running")
   set guioptions-=T               " remove MacVim toolbar
