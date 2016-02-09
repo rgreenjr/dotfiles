@@ -25,7 +25,9 @@ sublime.log_commands(True)
 All Autocomplete
 ApplySyntax
 Better CoffeeScript
+Bootstrap 3 Snippets
 Color Highlighter
+Copy File Name
 DashDoc
 Elixir
 ElixirSublime
