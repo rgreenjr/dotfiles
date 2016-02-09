@@ -56,3 +56,6 @@ chsh -s /usr/local/bin/bash
 
 # install bash-completion
 brew install bash-completion
+
+# install gems
+gem install rubocop
