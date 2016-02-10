@@ -29,6 +29,7 @@ brew install pick
 # install optional applications
 brew install caskroom/cask/brew-cask
 brew cask install alfred
+brew cask install atom
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
@@ -59,3 +60,8 @@ brew install bash-completion
 
 # install gems
 gem install rubocop
+
+# install atom packages
+apm install autocomplete-elixir
+apm install language-elixir
+apm install vim-mode
