@@ -1,0 +1,11 @@
+"*":
+  core: {}
+  editor:
+    fontFamily: "Consolas"
+    fontSize: 13
+    invisibles: {}
+  "exception-reporting":
+    userId: "81eca08e-f4c2-6387-f158-df318f7352d1"
+  welcome:
+    showOnStartup: false
+  whitespace: {}
