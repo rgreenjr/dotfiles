@@ -25,6 +25,7 @@ alias killp='kill $(ps -e | awk '\''{if(NR!=1) { print $4, $1 }}'\'' | pick -do 
 alias ll='ls -lhAGp'
 
 # open current directory in Sublime Text
+alias a='atom .'
 alias s='subl .'
 
 # pick command from history
