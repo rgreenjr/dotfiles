@@ -7,7 +7,6 @@ fi
 
 # install core tools
 brew install boot2docker
-brew install brew-cask
 brew install ccat
 brew install docker
 brew install docker-compose
@@ -28,7 +27,6 @@ brew tap thoughtbot/formulae
 brew install pick
 
 # install optional applications
-brew install caskroom/cask/brew-cask
 brew cask install alfred
 brew cask install atom
 brew cask install dropbox
