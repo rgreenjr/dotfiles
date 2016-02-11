@@ -63,4 +63,5 @@ gem install rubocop
 # install atom packages
 apm install autocomplete-elixir
 apm install language-elixir
+apm install language-tmux
 apm install vim-mode
