@@ -13,6 +13,7 @@ brew install docker
 brew install docker-compose
 brew install git
 brew install hr
+brew install htop
 brew install httpie
 brew install node
 brew install pick
