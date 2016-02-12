@@ -1,4 +1,6 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "82587586-8282-40c8-9ee6-352bf2bdcf79"
   core:
     ignoredNames: [
       ".bundle"
