@@ -24,6 +24,9 @@
   pigments:
     supportedFiletypes: [
       "*.css"
+      "*.html"
+      "*.htm"
+      "*.less"
       "*.scss"
     ]
   "tree-view":
