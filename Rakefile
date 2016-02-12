@@ -2,8 +2,7 @@ require "rake"
 
 desc "symlink dot files"
 task :symlink_dot_files do
-  ignore = %w(osx)
-  glob("home/*", ignore).each do |entry|
+  glob("home/*", ["gitconfig"]).each do |entry|
     symlink_file entry, File.join(Dir.home, ".#{File.basename(entry)}")
   end
 end
