@@ -17,9 +17,8 @@ end
 desc "symlink sublime text files"
 task :symlink_sublime_text_files do
   app_path = "Library/Application Support/Sublime Text 3/Packages/User/"
-  base = File.join(Dir.home, app_path)
   glob("sublime/*", ["NOTES.md"]).each do |entry|
-    symlink_file entry, File.join(base, File.basename(entry))
+    symlink_file entry, File.join(Dir.home, app_path, File.basename(entry))
   end
 end
 
