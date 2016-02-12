@@ -5,6 +5,7 @@
     ignoredNames: [
       ".bundle"
       ".capistrano"
+      ".gitignore"
       ".vagrant"
       ".git"
       ".hg"
