@@ -1,5 +1,16 @@
 "*":
-  core: {}
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".capistrano"
+      ".vagrant"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thunbs.db"
+    ]
   editor:
     fontFamily: "Consolas"
     fontSize: 13
@@ -8,6 +19,8 @@
     userId: "81eca08e-f4c2-6387-f158-df318f7352d1"
   "linter-rubocop": {}
   minimap: {}
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
   whitespace: {}
