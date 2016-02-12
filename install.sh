@@ -74,6 +74,7 @@ apm install linter-jshint
 apm install linter-jsonlint
 apm install linter-markdown
 apm install linter-rubocop
+apm install rubocop-auto-correct
 apm install linter-scss-lint
 # apm install linter-shellcheck
 apm install linter-tidy
