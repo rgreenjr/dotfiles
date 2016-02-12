@@ -2,7 +2,8 @@ require "rake"
 
 desc "symlink dot files"
 task :symlink_dot_files do
-  glob("*", %w(gitconfig install.sh osx Rakefile README.md)).each do |entry|
+  ignore = %w(gitconfig install.sh osx Rakefile README.md)
+  glob("*", ignore).each do |entry|
     symlink_file entry, File.join(Dir.home, ".#{entry}")
   end
 end
@@ -16,8 +17,9 @@ end
 
 desc "symlink sublime text files"
 task :symlink_sublime_text_files do
-  base = File.join(Dir.home, "Library/Application Support/Sublime Text 3/Packages/User/")
-  glob("sublime/*", %w(NOTES.md)).each do |entry|
+  app_path = "Library/Application Support/Sublime Text 3/Packages/User/"
+  base = File.join(Dir.home, app_path)
+  glob("sublime/*", ["NOTES.md"]).each do |entry|
     symlink_file entry, File.join(base, File.basename(entry))
   end
 end

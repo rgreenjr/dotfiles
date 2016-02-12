@@ -1,4 +1,3 @@
-dotfiles
-========
+# dotfiles
 
 Config files for bash, vim, git, etc.
