@@ -57,11 +57,25 @@ chsh -s /usr/local/bin/bash
 # install bash-completion
 brew install bash-completion
 
-# install gems
+# install ruby gems
 gem install rubocop
 
 # install atom packages
 apm install autocomplete-elixir
 apm install language-elixir
 apm install language-tmux
+apm install linter
+apm install linter-bootlint
+apm install linter-coffeelint
+apm install linter-csslint
+apm install linter-erb
+# apm install linter-htmlhint
+apm install linter-jshint
+apm install linter-jsonlint
+apm install linter-rubocop
+apm install linter-scss-lint
+apm install linter-shellcheck
+apm install linter-tidy
+apm install minimap
+apm install pigments
 apm install vim-mode
