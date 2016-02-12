@@ -1,27 +1,29 @@
 # Notes
 
-# General
+## General
 
 Enable command logging
 
-```
+```sh
 sublime.log_commands(True)
 ```
 
-# Emmet Actions
+## Emmet Actions
 
 - Balance Outward (searches outward and selects it) `CTRL + D`
 - Balance Inward (searches inward and selects it) `CTRL + J`
 - Expand Select to Tag `CMD + SHIFT + A`
 - Goto Matching Pair `CTRL + SHIFT + T`
-- Goto Next Edit Point (goto next edit point wihtout content) `CTRL + ALT + →`
-- Goto Previous Edit Point (goto previous edit point wihtout content) `CTRL + ALT + ←`
+- Goto Next Edit Point (goto next edit point without content) `CTRL + ALT + →`
+- Goto Previous Edit Point (goto previous edit point without content)
+  `CTRL + ALT + ←`
 - Select Next Item `CMD + SHIFT + .`
 - Select Previous Item `CMD + SHIFT + ALT + .`
 - Rename Tag `SHIFT + CMD + K`
-- Remove Tag `CMD + ALT + K` 
+- Remove Tag `CMD + ALT + K`
 
-# Packages
+## Packages
+
 All Autocomplete
 ApplySyntax
 Better CoffeeScript
@@ -62,7 +64,8 @@ SublimeLinter-ruby
 Swift
 Tmux
 
-# Retired Packages
+## Retired Packages
+
 Monokai - Spacegray
 Theme - Flatland
 Theme - Soda
