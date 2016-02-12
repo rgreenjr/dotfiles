@@ -65,6 +65,7 @@ apm install atom-beautify
 apm install emmet
 apm install file-icons
 apm install language-elixir
+apm install language-nginx
 apm install language-tmux
 apm install linter
 apm install linter-bootlint
