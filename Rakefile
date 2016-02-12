@@ -2,9 +2,9 @@ require "rake"
 
 desc "symlink dot files"
 task :symlink_dot_files do
-  ignore = %w(gitconfig install.sh osx Rakefile README.md)
-  glob("*", ignore).each do |entry|
-    symlink_file entry, File.join(Dir.home, ".#{entry}")
+  ignore = %w(osx)
+  glob("home/*", ignore).each do |entry|
+    symlink_file entry, File.join(Dir.home, ".#{File.basename(entry)}")
   end
 end
 
