@@ -61,7 +61,7 @@ brew install bash-completion
 gem install rubocop
 
 # install atom packages
-apm install autocomplete-elixir
+apm install atom-beautify
 apm install language-elixir
 apm install language-tmux
 apm install linter
@@ -72,10 +72,12 @@ apm install linter-erb
 # apm install linter-htmlhint
 apm install linter-jshint
 apm install linter-jsonlint
+apm install linter-markdown
 apm install linter-rubocop
 apm install linter-scss-lint
-apm install linter-shellcheck
+# apm install linter-shellcheck
 apm install linter-tidy
 apm install minimap
 apm install pigments
 apm install vim-mode
+apm install vim-surround
