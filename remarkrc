@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "lint": {
+      "heading-increment": false,
+      "list-item-spacing": false,
+      "list-item-indent": false
+    }
+  },
+  "settings": {
+    "commonmark": true
+  }
+}
