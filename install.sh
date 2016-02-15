@@ -77,14 +77,17 @@ apm install linter-jshint
 apm install linter-jsonlint
 apm install linter-markdown
 apm install linter-rubocop
-apm install rubocop-auto-correct
 apm install linter-scss-lint
 apm install linter-tidy
+apm install merge-conflicts
 apm install minimap
 apm install pigments
+apm install rails-rspec
+apm install rubocop-auto-correct
+apm install Sublime-Style-Column-Selection
 apm install vim-mode
 apm install vim-surround
 
+# apm isntall atom-toggle-quotes
 # apm install linter-htmlhint
 # apm install linter-shellcheck
-# apm isntall atom-toggle-quotes
