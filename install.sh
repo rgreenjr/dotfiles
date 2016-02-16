@@ -8,6 +8,7 @@ fi
 # install core tools
 brew install boot2docker
 brew install ccat
+brew install diff-so-fancy
 brew install docker
 brew install docker-compose
 brew install git
