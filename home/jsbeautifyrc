@@ -1,10 +1,11 @@
 {
   "css": {
+    "convert_quotes": "double",
     "indent_char": " ",
     "indent_size": 2,
-    "max_preserve_newlines": 2,
     "newline_between_rules": true,
     "no_lead_zero": true,
+    "preserve_newlines": true,
     "selector_separator_newline": true
   },
   "html": {
