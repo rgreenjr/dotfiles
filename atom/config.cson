@@ -34,8 +34,10 @@
       "*.scss"
     ]
   "rails-rspec": {}
+  "toggle-quotes": {}
   "tree-view":
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
-  whitespace: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
