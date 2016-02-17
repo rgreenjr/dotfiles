@@ -11,7 +11,8 @@
     "end_with_newline": true,
     "indent_char": " ",
     "indent_size": 2,
-    "max_preserve_newlines": 2
+    "max_preserve_newlines": 2,
+    "wrap_line_length": 80
   },
   "js": {
     "end_with_newline": true,
