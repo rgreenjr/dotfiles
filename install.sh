@@ -63,6 +63,7 @@ gem install rubocop
 
 # install atom packages
 apm install atom-beautify
+apm install atom-html-preview
 apm install emmet
 apm install file-icons
 apm install language-elixir
