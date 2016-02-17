@@ -34,3 +34,7 @@
 # have 'jk' activate normal mode when in insert mode
 'atom-text-editor.vim-mode.insert-mode':
   'j k': 'vim-mode:activate-normal-mode'
+
+# fix to always trigger markdown-preview:toggle
+'.editor:not(.mini)':
+  'ctrl-shift-M': 'markdown-preview:toggle'
