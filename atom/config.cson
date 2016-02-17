@@ -21,6 +21,7 @@
   emmet: {}
   "exception-reporting":
     userId: "81eca08e-f4c2-6387-f158-df318f7352d1"
+  linter: {}
   "linter-rubocop": {}
   "merge-conflicts": {}
   minimap:
